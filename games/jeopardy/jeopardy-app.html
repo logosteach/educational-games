@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jeopardy! Classroom Game</title>
+<title>Jeepody! Classroom Game</title>
 <style>
 :root{--blue:#060CE9;--navy:#020770;--gold:#FFCC33;--clue:Korinna,"ITC Korinna","Georgia","Times New Roman",serif;--head:"Swiss 911","Arial Black","Helvetica Neue",Arial,sans-serif;--money:Impact,"Haettenschweiler","Arial Narrow Bold","Arial Black",sans-serif}
 *{box-sizing:border-box}html,body{margin:0;height:100%;background:#000;color:#fff;font-family:var(--head);overflow:hidden}
@@ -69,7 +69,7 @@ code{font-family:"Courier New",Menlo,Consolas,monospace;font-weight:bold;text-tr
 
 <!-- SETUP -->
 <div id="setup" class="screen">
- <h1>JEOPARDY! <span style="font-size:24px;color:#fff;font-family:var(--head)">classroom game setup</span></h1>
+ <h1>JEEPODY! <span style="font-size:24px;color:#fff;font-family:var(--head)">classroom game setup</span></h1>
  <div class="panel"><h2>1. Teams</h2>
   <div class="row" style="margin-bottom:10px"><button id="addTeam">+ Add team</button><span style="font-family:Arial;font-size:16px">Type a name and press Enter to add a student. Drag a name to another team, or use its dropdown.</span></div>
   <div id="teams"></div>
@@ -107,21 +107,21 @@ code{font-family:"Courier New",Menlo,Consolas,monospace;font-weight:bold;text-tr
 
 <!-- FINAL -->
 <div id="finOv" class="ov">
- <div class="ovtop"><span>FINAL JEOPARDY!</span><span id="timer"></span></div>
+ <div class="ovtop"><span>FINAL JEEPODY!</span><span id="timer"></span></div>
  <div class="cluebox"><div id="finText" class="fit"></div></div>
  <div id="finCtrl"></div>
 </div>
 
 <!-- HELP -->
 <div id="help" class="ov" style="bottom:0;z-index:60;background:rgba(0,0,0,.7)"><div class="inner">
-<h2>How to use this Jeopardy! game</h2>
+<h2>How to use this Jeepody! game</h2>
 <ol>
 <li><b>Open</b> this file in Chrome, Edge, Safari or Firefox on your Mac (double-click it). It needs no internet. In Adobe Connect, share your screen or the browser window. Press <b>F11</b> / <b>Ctrl+Cmd+F</b> for full screen.</li>
 <li><b>Teams:</b> click <i>+ Add team</i>, rename it in the box, type student names and press Enter. Drag a name to another team (or pick a team in its dropdown). ✕ removes a student; <i>Delete team</i> removes the team. Or paste a roster and click <i>Shuffle into teams</i>.</li>
 <li><b>Questions:</b> drop a CSV on the dashed box, click <i>Choose file…</i>, or click <i>Use built-in cross-curricular sample</i>. Then click <b>Start game</b>.</li>
 <li><b>Play:</b> click a dollar amount. Read the clue, click <b>Show Answer</b>, then click <b>✓</b> (adds the value) or <b>✗</b> (subtracts it) for any team. You can mark several teams (one wrong, another steals). Click <b>Back to board</b> (or press Esc); the square goes blank. <i>Nobody / Back to board</i> leaves scores alone.</li>
 <li><b>Daily Double:</b> pick the team and type its wager (up to its score, or up to the top board value if it has less). Only that team is scored.</li>
-<li><b>Final Jeopardy:</b> click <i>Final Jeopardy</i> on the right of the score bar. Reveal the category, type each team's wager, reveal the clue (30-second thinking music and timer), show the answer, tick right/wrong for each team, then <i>Apply wagers</i>.</li>
+<li><b>Final Jeepody:</b> click <i>Final Jeepody</i> on the right of the score bar. Reveal the category, type each team's wager, reveal the clue (30-second thinking music and timer), show the answer, tick right/wrong for each team, then <i>Apply wagers</i>.</li>
 <li><b>Scores:</b> +/− buttons under each team change the score by 100 (click the team name to type an exact score). Hover a team name to see its members. <b>Undo</b> reverses the last award.</li>
 <li><b>Everything is saved</b> in this browser automatically, so a refresh will not lose the game. <i>Setup</i> returns to team setup; <i>New game</i> resets scores and the board (teams stay).</li>
 <li><b>Sound:</b> 🔊 mutes, the slider sets volume. Sounds are original, not the TV show's audio.</li>
@@ -130,7 +130,7 @@ code{font-family:"Courier New",Menlo,Consolas,monospace;font-weight:bold;text-tr
 <p>First row is the header. Columns: <code>category,value,clue,answer,daily_double</code>. Only <code>category</code>, <code>clue</code> and <code>answer</code> are required. Up to 6 categories × 5 clues, in the order they first appear.</p>
 <ul><li><code>value</code> is optional: blank values become 200, 400, 600, 800, 1000 by row order within the category.</li>
 <li><code>daily_double</code>: <code>yes</code> marks a Daily Double (any number of them).</li>
-<li>Final Jeopardy: one row whose category is <code>final</code> or <code>final:Category Name</code>.</li>
+<li>Final Jeepody: one row whose category is <code>final</code> or <code>final:Category Name</code>.</li>
 <li>Put fields with commas, quotes or line breaks in double quotes; write a quote as <code>""</code>. Wrap code in backticks (<code>`df.head()`</code>) to show it in code font.</li></ul>
 <pre>category,value,clue,answer,daily_double
 Mathematics,100,"The interior angles of any triangle add up to this many degrees.","What is 180?",no
@@ -186,7 +186,7 @@ function buildGame(text){const rows=parseCSV(text);if(rows.length<2)throw Error(
  const cats=[],warn=[];let fin=null;
  rows.slice(1).forEach((r,n)=>{const cat=(r[iC]||"").trim(),clue=(r[iQ]||"").trim(),ans=(r[iA]||"").trim();
   if(!cat&&!clue)return;
-  if(/^final(\s*jeopardy)?\s*(:|$)/i.test(cat)){fin={cat:cat.split(":").slice(1).join(":").trim()||"Final Jeopardy",clue,answer:ans};return;}
+  if(/^final(\s*(jeopardy|jeepody))?\s*(:|$)/i.test(cat)){fin={cat:cat.split(":").slice(1).join(":").trim()||"Final Jeepody",clue,answer:ans};return;}
   if(!clue||!ans){warn.push("Row "+(n+2)+" skipped (missing clue or answer).");return;}
   let c=cats.find(x=>x.name===cat);if(!c){if(cats.length>=6){warn.push("Row "+(n+2)+": more than 6 categories, skipped.");return;}c={name:cat,clues:[]};cats.push(c);}
   if(c.clues.length>=5){warn.push("Row "+(n+2)+": "+cat+" already has 5 clues, skipped.");return;}
@@ -217,7 +217,7 @@ function moveMember(fromId,mi,toId){if(fromId===toId)return;const f=S.teams.find
 function setCSV(text,name){try{const g=buildGame(text);S.csvText=text;S.csvName=name;S.loaded=g;save();showCSVInfo();}catch(e){$("csvInfo").innerHTML=`<span class="err">${esc(name)}: ${esc(e.message)}</span>`;}}
 function showCSVInfo(){const g=S.loaded;if(!g){$("csvInfo").textContent="No questions loaded yet.";return;}
  const n=g.cats.reduce((a,c)=>a+c.clues.length,0),dd=g.cats.reduce((a,c)=>a+c.clues.filter(x=>x.dd).length,0);
- $("csvInfo").innerHTML=`<span class="good">✓ ${esc(S.csvName)}: ${g.cats.length} categories (${g.cats.map(c=>esc(c.name)).join(", ")}), ${n} clues, ${dd} Daily Double(s), ${g.final?"Final Jeopardy: "+esc(g.final.cat):"no Final Jeopardy"}.</span>`+(g.warn.length?`<div class="err">${g.warn.map(esc).join("<br>")}</div>`:"");}
+ $("csvInfo").innerHTML=`<span class="good">✓ ${esc(S.csvName)}: ${g.cats.length} categories (${g.cats.map(c=>esc(c.name)).join(", ")}), ${n} clues, ${dd} Daily Double(s), ${g.final?"Final Jeepody: "+esc(g.final.cat):"no Final Jeepody"}.</span>`+(g.warn.length?`<div class="err">${g.warn.map(esc).join("<br>")}</div>`:"");}
 function readFile(f){const r=new FileReader();r.onload=()=>setCSV(r.result,f.name);r.readAsText(f);}
 // ---------- game ----------
 function show(id){document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("on",s.id===id));}
@@ -240,7 +240,7 @@ function renderScores(){const bar=$("scorebar");bar.innerHTML="";
   d.querySelector(".n").onclick=()=>{d.classList.toggle("open");const v=prompt("Set score for "+t.name,t.score);if(v!==null&&!isNaN(parseInt(v)))award(t.id,parseInt(v)-t.score,"manual");};
   bar.appendChild(d);});
  const tl=document.createElement("div");tl.id="tools";
- tl.innerHTML=`<button id="undoB" class="sec" ${S.history.length?"":"disabled"}>↶ Undo</button><button id="finB" ${S.game&&S.game.final&&!S.game.finalDone?"":"disabled"}>Final Jeopardy</button><button id="setupB" class="sec">Setup</button><button id="newB" class="danger">New game</button>`;
+ tl.innerHTML=`<button id="undoB" class="sec" ${S.history.length?"":"disabled"}>↶ Undo</button><button id="finB" ${S.game&&S.game.final&&!S.game.finalDone?"":"disabled"}>Final Jeepody</button><button id="setupB" class="sec">Setup</button><button id="newB" class="danger">New game</button>`;
  bar.appendChild(tl);$("undoB").onclick=undo;$("finB").onclick=()=>finalStep("cat");$("setupB").onclick=()=>{closeOv();openSetup();};$("newB").onclick=startGame;}
 function award(teamId,delta,why){const t=S.teams.find(x=>x.id==teamId);if(!t||!delta)return;t.score+=delta;S.history.push({teamId,delta,why});save();renderScores();if(why==="correct")play("correct");else if(why==="wrong")play("wrong");}
 function undo(){const h=S.history.pop();if(!h)return;const t=S.teams.find(x=>x.id==h.teamId);if(t)t.score-=h.delta;
@@ -314,7 +314,7 @@ const drop=$("drop");["dragover","dragenter"].forEach(ev=>drop.addEventListener(
 drop.addEventListener("dragleave",()=>drop.classList.remove("over"));
 drop.addEventListener("drop",e=>{e.preventDefault();drop.classList.remove("over");const f=e.dataTransfer.files[0];if(f)readFile(f);});
 window.addEventListener("dragover",e=>e.preventDefault());window.addEventListener("drop",e=>e.preventDefault());
-$("useSample").onclick=()=>setCSV(SAMPLE_CSV,"sample-jeopardy-cross-curricular.csv (built-in)");
+$("useSample").onclick=()=>setCSV(SAMPLE_CSV,"Cross-curricular sample (built-in)");
 $("dlSample").onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([SAMPLE_CSV],{type:"text/csv"}));a.download="sample-jeopardy-cross-curricular.csv";document.body.appendChild(a);a.click();a.remove();};
 $("start").onclick=startGame;$("resume").onclick=()=>{openBoard(false);if(S.pending){if(S.pending.stage==="dd")showDD();else showClue();}};
 $("helpBtn").onclick=()=>$("help").classList.add("on");$("helpClose").onclick=()=>$("help").classList.remove("on");

@@ -22,7 +22,7 @@ You're reading this on **GitHub**. GitHub is a website where people store and sh
 
 | Game | What it is | Instructions |
 |------|------------|--------------|
-| **Jeopardy-style review game** | A team quiz game. You make teams, load your own questions, and keep score. | [Open the Jeopardy instructions](games/jeopardy/README.md) |
+| **Jeepody (quiz review game)** | A team quiz game. You make teams, load your own questions, and keep score. | [Open the Jeepody instructions](games/jeopardy/README.md) |
 
 More games will be added over time. Each game lives in its own folder inside the **games** folder, and each one has its own instructions page.
 
@@ -30,7 +30,7 @@ More games will be added over time. Each game lives in its own folder inside the
 
 ## Fastest way: play online (nothing to download)
 
-Just click this link to open the Jeopardy game in your browser:
+Just click this link to open the Jeepody game in your browser:
 
 **https://logosteach.github.io/educational-games/games/jeopardy/jeopardy-app.html**
 
@@ -44,8 +44,9 @@ Pick **Option A** if you just want one game. Pick **Option B** if you want every
 
 ### Option A: download just one file
 
-1. Go to the game's folder. For Jeopardy, click [games/jeopardy](games/jeopardy).
-2. Click the game file. For Jeopardy, it's **jeopardy-app.html**.
+1. Go to the game's folder. For Jeepody, click [games/jeopardy](games/jeopardy).
+2. Click the game file. For Jeepody, it's **jeopardy-app.html**.
+   (The file and folder names still say "jeopardy". That is normal, and it is the right file.)
 3. A page opens showing the file. Near the top right, click the **Download raw file** button. It looks like a small arrow pointing down into a tray.
 4. The file is saved to your computer, usually in your **Downloads** folder.
 

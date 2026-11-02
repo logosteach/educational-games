@@ -1,4 +1,4 @@
-# Jeopardy-Style Review Game
+# Jeepody: A Classroom Quiz Review Game
 
 A team quiz game for review days. You load your own questions from a simple spreadsheet file (a **CSV** file, explained below), make teams, and play. Answered squares disappear from the board, and scores update automatically.
 
@@ -57,9 +57,9 @@ When a Daily Double square comes up, pick the team that's playing it and type it
 
 ![Daily Double](screenshots/5-dailydouble.png)
 
-**Final Jeopardy**
+**Final Jeepody**
 
-1. Click **Final Jeopardy** on the right side of the score bar.
+1. Click **Final Jeepody** on the right side of the score bar.
 2. Reveal the category, then type each team's wager.
 3. Reveal the clue. A 30-second timer and thinking music play.
 4. Show the answer and mark each team right or wrong.
@@ -123,7 +123,7 @@ Example as a table:
 
 These rows come from the sample file. The Mendel row is a Daily Double.
 
-The last row is the **Final Jeopardy** clue. Type **final** in the category column, or **final:** followed by a category name (like *final:Science & History*) to show that name to students.
+The last row is the **Final Jeepody** clue. Type **final** in the category column, or **final:** followed by a category name (like *final:Science & History*) to show that name to students.
 
 ### Step by step: build your own game
 
@@ -132,7 +132,7 @@ The last row is the **Final Jeopardy** clue. Type **final** in the category colu
 3. **Leave the first row alone.** It must stay exactly: `category, value, clue, answer, daily_double`.
 4. **Type your categories, clues, and answers** over the sample ones. Keep all the clues for one category together, from easiest (lowest value) to hardest.
 5. **Mark Daily Doubles** by typing **yes** in the daily_double column.
-6. **Add a Final Jeopardy row** (optional) with **final** or **final:Category Name** as the category.
+6. **Add a Final Jeepody row** (optional) with **final** or **final:Category Name** as the category.
 7. **Save it as a CSV file:**
    - **Excel:** **File > Save As**, then in the file type list choose **CSV UTF-8 (Comma delimited) (\*.csv)**, then **Save**. If Excel warns that some features will be lost, click **Yes** / **Keep current format**.
    - **Google Sheets:** **File > Download > Comma-separated values (.csv)**. The file goes to your Downloads folder.
@@ -143,7 +143,7 @@ The last row is the **Final Jeopardy** clue. Type **final** in the category colu
 
 - Keep the header row exactly as it is.
 - The board holds up to **6 categories** with up to **5 clues** each. Extra ones are skipped.
-- Use **final** or **final:Name** for Final Jeopardy (one row).
+- Use **final** or **final:Name** for Final Jeepody (one row).
 - Type **yes** for a Daily Double. You can have more than one.
 - Commas inside a clue are fine when you use a spreadsheet app. It handles them for you when saving. (If you type in Notepad or TextEdit, put the clue in double quotes, like `"Hello, world"`.)
 - Text between backticks (\`like this\`) shows up as code, handy for programming classes.
@@ -178,7 +178,7 @@ Open the game in its own browser tab, then share **that tab** (or the browser wi
 
 ## Disclaimer
 
-This is an independent educational tool. It is not affiliated with, endorsed by, or sponsored by *Jeopardy!*, Jeopardy Productions, Inc., or Sony Pictures Television. *Jeopardy!* is a registered trademark of its owner.
+Jeepody is an independent educational tool inspired by TV quiz shows. It is not affiliated with, endorsed by, or sponsored by *Jeopardy!*, Jeopardy Productions, Inc., or Sony Pictures Television. *Jeopardy!* is a registered trademark of its owner.
 
 ## License
 
