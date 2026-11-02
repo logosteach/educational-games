@@ -30,7 +30,7 @@ New to downloading files from GitHub? See the step-by-step guide in the [main in
 ## Part 3: Load your questions
 
 1. In **2. Questions (CSV)**, either drag your CSV file onto the dashed box, or click **Choose file…** and pick it.
-2. Don't have one yet? Click **Use built-in Test 3 sample** to try the game, or **Download sample CSV** to get a file you can edit.
+2. Don't have one yet? Click **Use built-in cross-curricular sample** to try the game right away. It has Mathematics, English, Biology, Chemistry, and History questions. Click **Download sample CSV** to get a copy you can edit.
 3. A green check mark tells you how many categories, clues, and Daily Doubles were found. A red message means something needs fixing (see "Common mistakes" below).
 4. Click **Start game**.
 
@@ -89,12 +89,12 @@ Opened in a spreadsheet app, it looks like a normal table. Opened in a text edit
 
 ```
 category,value,clue,answer,daily_double
-Mathematics,100,The angles of a triangle add up to this many degrees.,What is 180?,no
+Mathematics,100,The interior angles of any triangle add up to this many degrees.,What is 180?,no
 ```
 
 ### How to open a CSV file
 
-First, download a sample: open the [samples](samples/) folder, click a **.csv** file, and click **Download raw file**. (Or click **Download sample CSV** inside the game.)
+First, download the sample: open the [samples](samples/) folder, click **[sample-jeopardy-cross-curricular.csv](samples/sample-jeopardy-cross-curricular.csv)**, and click **Download raw file**. (Or click **Download sample CSV** inside the game.)
 
 - **Microsoft Excel:** double-click the CSV file, or open Excel and choose **File > Open** and pick the file.
 - **Google Sheets** (free, online): go to sheets.google.com, open a blank spreadsheet, choose **File > Import > Upload**, pick the file, and click **Import data**.
@@ -115,16 +115,19 @@ Example as a table:
 
 | category | value | clue | answer | daily_double |
 |----------|-------|------|--------|--------------|
-| Mathematics | 100 | The angles of any triangle add up to this many degrees. | What is 180? | no |
-| Mathematics | 200 | In y = mx + b, this letter is the slope. | What is m? | yes |
-| Biology | 100 | The "powerhouse of the cell." | What is the mitochondria? | no |
-| final:World History | | This document was signed in 1215. | What is the Magna Carta? | |
+| Mathematics | 100 | The interior angles of any triangle add up to this many degrees. | What is 180? | no |
+| English | 200 | This playwright wrote Romeo and Juliet and Hamlet. | Who is William Shakespeare? | no |
+| Biology | 400 | This Augustinian friar, the "father of genetics," studied inheritance in pea plants. | Who is Gregor Mendel? | yes |
+| History | 300 | Signed in 1215, this English charter limited the power of King John. | What is the Magna Carta? | no |
+| final:Science & History | | This 19th-century French scientist disproved spontaneous generation with swan-neck flasks, and a heat treatment for milk bears his name. | Who is Louis Pasteur? | no |
 
-The last row is the **Final Jeopardy** clue. Type **final** in the category column, or **final:** followed by a category name (like *final:World History*) to show that name to students.
+These rows come from the sample file. The Mendel row is a Daily Double.
+
+The last row is the **Final Jeopardy** clue. Type **final** in the category column, or **final:** followed by a category name (like *final:Science & History*) to show that name to students.
 
 ### Step by step: build your own game
 
-1. **Copy a sample.** Download one of the sample CSV files and open it in Excel, Google Sheets, or Numbers.
+1. **Copy the sample.** Download [sample-jeopardy-cross-curricular.csv](samples/sample-jeopardy-cross-curricular.csv) (or click **Download sample CSV** in the game) and open it in Excel, Google Sheets, or Numbers.
 2. **Save a copy under a new name** right away (for example *my-review-game*) so you keep the original.
 3. **Leave the first row alone.** It must stay exactly: `category, value, clue, answer, daily_double`.
 4. **Type your categories, clues, and answers** over the sample ones. Keep all the clues for one category together, from easiest (lowest value) to hardest.

@@ -49,7 +49,7 @@ Pick **Option A** if you just want one game. Pick **Option B** if you want every
 3. A page opens showing the file. Near the top right, click the **Download raw file** button. It looks like a small arrow pointing down into a tray.
 4. The file is saved to your computer, usually in your **Downloads** folder.
 
-You can download a sample question file the same way: open the **samples** folder, click a file ending in **.csv**, and click **Download raw file**.
+You can download the sample question file the same way: open the **samples** folder, click **[sample-jeopardy-cross-curricular.csv](games/jeopardy/samples/sample-jeopardy-cross-curricular.csv)** (Math, English, Biology, Chemistry, and History questions), and click **Download raw file**. Edit it to make your own game.
 
 ### Option B: download everything (ZIP file)
 
