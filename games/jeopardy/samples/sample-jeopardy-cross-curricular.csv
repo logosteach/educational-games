@@ -1,0 +1,27 @@
+category,value,clue,answer,daily_double
+"Mathematics",100,"The interior angles of any triangle add up to this many degrees.","What is 180?",no
+"Mathematics",200,"In the slope-intercept form y = mx + b, this letter stands for the slope.","What is m?",no
+"Mathematics",300,"Solving 2x + 6 = 20 gives x this value.","What is 7?",no
+"Mathematics",400,"This theorem states that a² + b² = c² for every right triangle.","What is the Pythagorean theorem?",no
+"Mathematics",500,"The interior angles of a hexagon add up to this many degrees.","What is 720?",no
+"English",100,"This part of speech names a person, place, thing, or idea.","What is a noun?",no
+"English",200,"This playwright wrote Romeo and Juliet and Hamlet.","Who is William Shakespeare?",no
+"English",300,"This figure of speech compares two things using ""like"" or ""as.""","What is a simile?",no
+"English",400,"This English novelist wrote Pride and Prejudice, published in 1813.","Who is Jane Austen?",no
+"English",500,"This Christian author wrote both The Screwtape Letters and The Chronicles of Narnia.","Who is C. S. Lewis?",no
+"Biology",100,"This organelle is known as the ""powerhouse of the cell.""","What is the mitochondrion (mitochondria)?",no
+"Biology",200,"Plants use this process to turn light energy, water, and carbon dioxide into glucose and oxygen.","What is photosynthesis?",no
+"Biology",300,"DNA's four bases are adenine, thymine, guanine, and this one.","What is cytosine?",no
+"Biology",400,"This Augustinian friar, the ""father of genetics,"" studied inheritance in pea plants.","Who is Gregor Mendel?",yes
+"Biology",500,"This type of cell division produces four genetically different haploid cells.","What is meiosis?",no
+"Chemistry",100,"This substance has the chemical formula H₂O.","What is water?",no
+"Chemistry",200,"This element has atomic number 1.","What is hydrogen?",no
+"Chemistry",300,"This element's symbol is Na.","What is sodium?",no
+"Chemistry",400,"Pure water at 25 °C has this pH.","What is 7?",no
+"Chemistry",500,"This constant, about 6.022 × 10²³, is the number of particles in one mole.","What is Avogadro's number?",no
+"History",100,"He was the first President of the United States.","Who is George Washington?",no
+"History",200,"In this year, Christopher Columbus first reached the Americas.","What is 1492?",no
+"History",300,"Signed in 1215, this English charter limited the power of King John.","What is the Magna Carta?",no
+"History",400,"In 1517 this German monk posted his Ninety-five Theses, sparking the Reformation.","Who is Martin Luther?",no
+"History",500,"Around 1440 this German developed a movable-type printing press; his most famous book was a Bible.","Who is Johannes Gutenberg?",no
+"final:Science & History",,"This 19th-century French scientist disproved spontaneous generation with swan-neck flasks, and a heat treatment for milk bears his name.","Who is Louis Pasteur?",no
