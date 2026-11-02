@@ -96,6 +96,8 @@ Mathematics,100,The interior angles of any triangle add up to this many degrees.
 
 First, download the sample: open the [samples](samples/) folder, click **[sample-jeopardy-cross-curricular.csv](samples/sample-jeopardy-cross-curricular.csv)**, and click **Download raw file**. (Or click **Download sample CSV** inside the game.)
 
+**Extra ready-to-use set:** [sample-jeopardy-mark-1.csv](samples/sample-jeopardy-mark-1.csv) is a Bible review game on the Gospel of Mark, chapter 1 (ESV). Download it the same way, then load it in the game with **Choose file…**.
+
 - **Microsoft Excel:** double-click the CSV file, or open Excel and choose **File > Open** and pick the file.
 - **Google Sheets** (free, online): go to sheets.google.com, open a blank spreadsheet, choose **File > Import > Upload**, pick the file, and click **Import data**.
 - **Numbers** (Mac): right-click the file, choose **Open With > Numbers**.
