@@ -98,6 +98,8 @@ First, download the sample: open the [samples](samples/) folder, click **[sample
 
 **Extra ready-to-use set:** [sample-jeopardy-mark-1.csv](samples/sample-jeopardy-mark-1.csv) is a Bible review game on the Gospel of Mark, chapter 1 (ESV). Download it the same way, then load it in the game with **Choose file…**.
 
+**Extra ready-to-use set:** [sample-jeopardy-kids-age-7.csv](samples/sample-jeopardy-kids-age-7.csv) is an easy game for young kids (about age 7: animals, colors and shapes, simple math, Bible stories, and the five senses). Download it the same way, then load it in the game with **Choose file…**.
+
 - **Microsoft Excel:** double-click the CSV file, or open Excel and choose **File > Open** and pick the file.
 - **Google Sheets** (free, online): go to sheets.google.com, open a blank spreadsheet, choose **File > Import > Upload**, pick the file, and click **Import data**.
 - **Numbers** (Mac): right-click the file, choose **Open With > Numbers**.

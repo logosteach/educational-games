@@ -1,0 +1,27 @@
+category,value,clue,answer,daily_double
+"Animals",100,"This animal says ""moo.""","A cow",no
+"Animals",200,"This big gray animal has a long trunk.","An elephant",no
+"Animals",300,"A baby frog is called this.","A tadpole",no
+"Animals",400,"This bird cannot fly, but it is a great swimmer in icy places.","A penguin",no
+"Animals",500,"A caterpillar turns into this pretty bug with wings.","A butterfly",no
+"Colors & Shapes",100,"The color of grass.","Green",no
+"Colors & Shapes",200,"This shape has 3 sides.","A triangle",no
+"Colors & Shapes",300,"Mix red and yellow paint to get this color.","Orange",no
+"Colors & Shapes",400,"A stop sign is this color.","Red",yes
+"Colors & Shapes",500,"A shape with 8 sides, like a stop sign.","An octagon",no
+"Counting & Easy Math",100,"What is 2 + 2?","4",no
+"Counting & Easy Math",200,"How many legs does a dog have?","4",no
+"Counting & Easy Math",300,"What is 10 - 3?","7",no
+"Counting & Easy Math",400,"How many days are in one week?","7",no
+"Counting & Easy Math",500,"What is 5 + 5 + 5?","15",no
+"Bible Stories",100,"He built a big boat called an ark.","Noah",no
+"Bible Stories",200,"Baby Jesus was born in this town.","Bethlehem",no
+"Bible Stories",300,"This boy beat the giant Goliath with a sling and a stone.","David",no
+"Bible Stories",400,"Jonah was swallowed by this.","A big fish",no
+"Bible Stories",500,"After the flood, God put this in the sky as a promise.","A rainbow",no
+"My Body & Five Senses",100,"You see with these.","Your eyes",no
+"My Body & Five Senses",200,"You smell with this.","Your nose",no
+"My Body & Five Senses",300,"You hear with these.","Your ears",no
+"My Body & Five Senses",400,"How many fingers are on one hand?","5",no
+"My Body & Five Senses",500,"This part of your body pumps blood and goes thump-thump.","Your heart",no
+"final:Bible Stories",,"Baby Jesus was laid in this, a feeding box for animals.","A manger",no
